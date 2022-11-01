@@ -55,7 +55,7 @@ export class CalendarHeader extends React.Component<CalendarHeaderProps> {
   private renderTitleIcon = (): ChevronDownElement => {
     const { tintColor, ...svgStyle } = this.props.iconStyle;
     const rotateStyle = this.props.viewModeId === CalendarViewModes.DATE.id
-      ? {}
+      ? {transform:[{rotate: '0deg'}]}
       : styles.rotateIcon;
 
     return (
